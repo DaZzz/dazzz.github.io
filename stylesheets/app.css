@@ -876,6 +876,11 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+@media screen and (max-width: 756px) {
+  .container {
+    padding: 20px 20px 100px 20px;
+  }
+}
 .container .logo {
   width: 300px;
   height: 140px;
@@ -912,6 +917,12 @@ body {
   color: rgba(0,0,0,0.8);
   margin-top: 50px;
 }
+@media screen and (max-width: 756px) {
+  .container h1 {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+}
 .container h3 {
   display: inline-block;
   padding: 0px 80px;
@@ -922,6 +933,13 @@ body {
   color: rgba(0,0,0,0.5);
   width: 100%;
   margin-top: 20px;
+}
+@media screen and (max-width: 756px) {
+  .container h3 {
+    margin-top: 30px;
+    font-size: 12px;
+    padding: 0px 10px;
+  }
 }
 .container .formgroup {
   max-width: 420px;
@@ -938,8 +956,6 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   padding: 10px 40px 10px 20px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
   background: rgba(0,0,0,0.03);
   border: 1px solid rgba(0,0,0,0.1);
   -webkit-border-radius: 5px;
@@ -948,6 +964,11 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .container .formgroup input.email:focus,
 .container .formgroup input.email:active {
@@ -981,7 +1002,7 @@ body {
   height: 16px;
   position: absolute;
   top: 50%;
-  margin-top: -8px;
+  margin-top: -7px;
   left: 50%;
   margin-left: -8px;
 }
